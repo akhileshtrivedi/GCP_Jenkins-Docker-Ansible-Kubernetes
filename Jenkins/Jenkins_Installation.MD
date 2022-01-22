@@ -1,9 +1,9 @@
-# Install Jenkins on AWS EC2
+# Install Jenkins on AWS EC2/Google Compute Engine (GCE)
 Jenkins is a self-contained Java-based program, ready to run out-of-the-box, with packages for Windows, Mac OS X and other Unix-like operating systems. As an extensible automation server, Jenkins can be used as a simple CI server or turned into the continuous delivery hub for any project.
 
 
 ### Prerequisites
-1. EC2 Instance 
+1. EC2 Instance/Google Compute Engine (GCE)
    - With Internet Access
    - Security Group with Port `8080` open for internet
 1. Java v1.8.x 
