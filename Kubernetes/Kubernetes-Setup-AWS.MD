@@ -37,18 +37,18 @@
 7. Create a Route53 private Hosted Zone (you can create Public hosted zone if you have a domain)
    ```sh
     Routeh53 --> hosted zones --> created hosted zone  
-    Domain Name: ameintu.net
+    Domain Name: akhileshaca.net
     Type: Private hosted zone for Amzon VPC
    ```
 
 8. Create an S3 Bucket
    ```sh
-    aws s3 mb s3://demo.k8s.ameintu.net
+    aws s3 mb s3://demo.k8s.akhileshaca.net
    ```
    
 9. Expose Environment Variable
    ```sh
-    export KOPS_STATE_STORE=s3://demo.k8s.ameintu.net
+    export KOPS_STATE_STORE=s3://demo.k8s.akhileshaca.net
    ```
 
 10. Create sshkeys before Creating Cluster
@@ -58,12 +58,12 @@
 
 11. Create Kubernetes Cluster Definitions on S3 bucket
    ```sh
-    kops create cluster --cloud=aws --zones=ap-south-1b --name=demo.k8s.ameintu.net --dns-zone=ameintu.net --dns private 
+    kops create cluster --cloud=aws --zones=ap-south-1b --name=demo.k8s.akhileshaca.net --dns-zone=akhileshaca.net --dns private 
    ```
 
 12. Create Kubernetes Cluser
    ```sh
-    kops update cluster demo.k8s.ameintu.net --yes
+    kops update cluster demo.k8s.akhileshaca.net --yes
    ```
 
 13. Validate Kubernetes Cluster
@@ -78,5 +78,5 @@
 
 15. Delete Kubernetes Cluster
     ```sh
-     kops delete cluster demo.k8s.ameintu.net --yes
+     kops delete cluster demo.k8s.akhileshaca.net --yes
     ```
