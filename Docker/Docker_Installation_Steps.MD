@@ -1,7 +1,7 @@
-# Installing Docker on Amazon Linux server
+# Installing Docker on Amazon/GCP Linux server
 
 ### Pre-requisites
-1. Amazon Linux EC2 Instance
+1. Amazon Linux EC2 Instance and Google Compute Engine (GCE)
 
 ## Installation Steps
 
